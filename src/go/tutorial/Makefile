@@ -1,6 +1,7 @@
 DIRS = \
   echo \
-  types
+  types \
+  primes
 
 all: $(addsuffix .all, $(DIRS))
 
