@@ -3,6 +3,7 @@ package main
 import "fmt"
 import "rand"
 import "time"
+import "runtime"
 
 type Callback func (int);
 
@@ -52,6 +53,7 @@ func qsort(a chan int) chan int {
 }
 
 func main() {
+  runtime.GOMAXPROCS(8);
   rand.Seed(time.Seconds());
 
   a := make(chan int);
