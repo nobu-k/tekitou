@@ -4,6 +4,7 @@ import "fmt"
 import "rand"
 import "time"
 import "runtime"
+import "flag"
 
 type Callback func (int);
 
@@ -52,18 +53,22 @@ func qsort(a chan int) chan int {
   return out
 }
 
+var numThreads = flag.Int("t", 1, "number of threads to be used.");
+var numElements = flag.Int("n", 10000, "number of elements to be sorted.");
+var output = flag.Bool("o", false, "output results");
 func main() {
-  runtime.GOMAXPROCS(8);
+  flag.Parse();
+  runtime.GOMAXPROCS(*numThreads);
   rand.Seed(time.Seconds());
 
   a := make(chan int);
   go func() {
-    for i := 0; i < 100000; i++ {
+    for i := 0; i < *numElements; i++ {
       a <- rand.Int();
     }
     a <- -1;
   }();
 
   res := qsort(a);
-  foreach (res, func (v int) { fmt.Println(v) });
+  foreach(res, func (v int) { if *output { fmt.Println(v) }});
 }
