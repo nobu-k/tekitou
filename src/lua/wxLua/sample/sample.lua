@@ -2,7 +2,7 @@
 
 require "wx"
 
-frame = wx.wxFrame(wx.NULL, wx.wxID_ANY, "wxLua Minimal Demo",
+frame = wx.wxFrame(wx.NULL, wx.wxID_ANY, "wxLua Minimal Demo (日本語)",
 		   wx.wxDefaultPosition, wx.wxSize(450, 450),
 		   wx.wxDEFAULT_FRAME_STYLE)
 
@@ -10,7 +10,7 @@ local fileMenu = wx.wxMenu()
 fileMenu:Append(wx.wxID_EXIT, "E&xit", "Quit the program")
 
 local helpMenu = wx.wxMenu()
-helpMenu:Append(wx.wxID_ABOUT, "&About",
+helpMenu:Append(wx.wxID_ABOUT, "&About (日本語)",
 		"About the wxLua Minimal Application")
 
 local menuBar = wx.wxMenuBar()
@@ -26,8 +26,8 @@ frame:Connect(wx.wxID_EXIT, wx.wxEVT_COMMAND_MENU_SELECTED,
 	      function (event) frame:Close(true) end)
 frame:Connect(wx.wxID_ABOUT, wx.wxEVT_COMMAND_MENU_SELECTED,
 	      function (event)
-		wx.wxMessageBox('This is The "About" dialog of the Minimal wxLua sample.',
-				"About wxLua",
+		wx.wxMessageBox('This is The "About" dialog of the Minimal wxLua sample. (日本語)',
+				"About wxLua (日本語)",
 				wx.wxOK + wx.wxICON_INFORMATION,
 				frame)
 	      end)
