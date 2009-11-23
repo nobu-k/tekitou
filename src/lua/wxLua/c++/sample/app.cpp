@@ -1,5 +1,4 @@
 // compile: g++ -O2 -I/usr/local/include/wxbind/setup `wx-config --libs` `wx-config --cflags` app.cpp -lwxlua_gtk2u_wxbindcore-2.8
-#include <iostream>
 #include <boost/shared_ptr.hpp>
 #include <wx/wx.h>
 #include <wxlua/include/wxlstate.h>
