@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-08 14:52+0900\n"
+"POT-Creation-Date: 2010-04-08 15:29+0900\n"
 "PO-Revision-Date: 2010-04-08 14:53+0900\n"
 "Last-Translator: nobu <nobu@nobu-desktop>\n"
 "Language-Team: Language jp\n"
@@ -15,14 +15,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.cpp:14
+#: main.cpp:17
 msgid "Hello world!"
 msgstr "こんにちは、世界！"
 
-#: main.cpp:15
+#: main.cpp:20
+msgid "extra"
+msgstr "追加！"
+
+#: main.cpp:18
 msgid "hoge"
 msgstr "ほげ"
 
-#: main.cpp:16
+#: main.cpp:19
 msgid "moge"
 msgstr "もげ"

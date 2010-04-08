@@ -17,5 +17,6 @@ int main()
   cout << _("Hello world!") << endl;
   cout << _("hoge") << endl;
   cout << _("moge") << endl;
+  cout << _("extra") << endl;
   return 0;
 }

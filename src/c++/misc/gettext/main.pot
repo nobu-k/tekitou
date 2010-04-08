@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-08 14:52+0900\n"
+"POT-Creation-Date: 2010-04-08 15:29+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,14 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.cpp:14
+#: main.cpp:17
 msgid "Hello world!"
 msgstr ""
 
-#: main.cpp:15
+#: main.cpp:18
 msgid "hoge"
 msgstr ""
 
-#: main.cpp:16
+#: main.cpp:19
 msgid "moge"
+msgstr ""
+
+#: main.cpp:20
+msgid "extra"
 msgstr ""
